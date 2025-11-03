@@ -116,6 +116,7 @@ public class TextAdventure
     // Take action or go to another zone based on their choice
     // ADD CODE HERE
     if(input.equalsIgnoreCase("Open")){
+      rand = (int)(Math.random()*100);
       if(rand>90){
         System.out.println("----------------------------------------------------------------------------------");
         ourHero.setGold(ourHero.getGold()+20);
@@ -161,6 +162,7 @@ public class TextAdventure
       System.out.println("It turns out its a dragon cave!\nThere is gold everywhere\n The dragon is asleep however\nWhat would you like to do?\nFight: fight the dragon\nSteal: steal the dragon's gold\nEscape: escape the cave\n"+ ourHero.getName() + ": ");
       input = inScanner.nextLine();
       if(input.equalsIgnoreCase("Fight")){
+        rand = (int)(Math.random()*100);
         if(rand>95){
           System.out.println("----------------------------------------------------------------------------------");
           ourHero.setGold(ourHero.getGold()+100);
@@ -222,7 +224,8 @@ public class TextAdventure
       System.out.println("There is a sea monster that comes with the storm\nIt's tentacles wrap the ship and takes some crew members with it\nFight it?\n"+ ourHero.getName() + ": ");
       input = inScanner.nextLine();
       if(input.equalsIgnoreCase("yes")){
-        if (rand>60){
+        rand = (int)(Math.random()*100);
+        if (rand>50){
           ourHero.defeatMonster();
           ourHero.setGold(ourHero.getGold()+50);
           System.out.println("----------------------------------------------------------------------------------");
@@ -276,6 +279,7 @@ public class TextAdventure
       enterZone6();
     }
     else if(input.equalsIgnoreCase("steal")){
+      rand = (int)(Math.random()*100);
       if(rand>50){
         System.out.println("----------------------------------------------------------------------------------");
         ourHero.setGold(ourHero.getGold()+100);
@@ -309,7 +313,8 @@ public class TextAdventure
     // Take action or go to another zone based on their choice
     // ADD CODE HERE
     if(input.equalsIgnoreCase("Havoc")){
-      if(rand>80){
+      rand = (int)(Math.random()*100);
+      if(rand>50){
         System.out.println("----------------------------------------------------------------------------------");
         ourHero.defeatMonster();
         ourHero.setGold(ourHero.getGold()+100);
