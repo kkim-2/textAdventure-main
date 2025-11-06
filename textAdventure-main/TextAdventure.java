@@ -163,7 +163,7 @@ public class TextAdventure
       input = inScanner.nextLine();
       if(input.equalsIgnoreCase("Fight")){
         rand = (int)(Math.random()*100);
-        if(rand>95){
+        if(rand>40){
           System.out.println("----------------------------------------------------------------------------------");
           ourHero.setGold(ourHero.getGold()+100);
           ourHero.defeatMonster();
@@ -225,7 +225,7 @@ public class TextAdventure
       input = inScanner.nextLine();
       if(input.equalsIgnoreCase("yes")){
         rand = (int)(Math.random()*100);
-        if (rand>50){
+        if (rand>40){
           ourHero.defeatMonster();
           ourHero.setGold(ourHero.getGold()+50);
           System.out.println("----------------------------------------------------------------------------------");
@@ -280,7 +280,7 @@ public class TextAdventure
     }
     else if(input.equalsIgnoreCase("steal")){
       rand = (int)(Math.random()*100);
-      if(rand>50){
+      if(rand>20){
         System.out.println("----------------------------------------------------------------------------------");
         ourHero.setGold(ourHero.getGold()+100);
         System.out.println("You were able to slip away with 100 gold worth of items!\nGold: "+ourHero.getGold());
@@ -314,7 +314,7 @@ public class TextAdventure
     // ADD CODE HERE
     if(input.equalsIgnoreCase("Havoc")){
       rand = (int)(Math.random()*100);
-      if(rand>50){
+      if(rand>20){
         System.out.println("----------------------------------------------------------------------------------");
         ourHero.defeatMonster();
         ourHero.setGold(ourHero.getGold()+100);
